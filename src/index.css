@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* Colors primary */
+  --primary: #d87d4a;
+  --primary-hover: #fbaf85;
+  --primary-foreground: #ffffff;
+
+  --gray-500: #878787;
+  --raduis: 0.5rem;
+  --card-background: #f1f1f1;
+  --secondary: #101010;
+  --border-cta: #000000;
+  --button-secondary: #b5b5b5;
+}
+
+@theme inline {
+  --font-monrape: "Manrope", sans-serif;
+}
+
+body {
+  font-family: var(--font-monrape);
+}
+
+@layer base {
+}
