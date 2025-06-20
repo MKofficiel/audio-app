@@ -8,6 +8,7 @@
   --primary-foreground: #ffffff;
 
   --gray-500: #878787;
+  --gray-600: #797979;
   --raduis: 0.5rem;
   --card-background: #f1f1f1;
   --secondary: #101010;
@@ -17,6 +18,17 @@
 
 @theme inline {
   --font-monrape: "Manrope", sans-serif;
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-gray-500: var(--gray-500);
+  --color-gray-600: var(--gray-600);
+  --color-secondary: var(--secondary);
+  --color-card-background: var(--card-background);
+  --color-border-cta: var(--border-cta);
+  --color-button-secondary: var(--button-secondary);
+  --radius: var(--raduis);
 }
 
 body {
@@ -24,4 +36,8 @@ body {
 }
 
 @layer base {
+}
+
+@utility container {
+  @apply mx-auto max-w-[1200px] max-lg:px-6 max-md:px-6 max-sm:px-4 md:px-10;
 }
