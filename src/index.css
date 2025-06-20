@@ -39,5 +39,8 @@ body {
 }
 
 @utility container {
-  @apply mx-auto max-w-[1200px] max-lg:px-6 max-md:px-6 max-sm:px-4 md:px-10;
+  margin-inline: auto;
+  padding-inline: 0;
+  margin: 0 auto;
+  max-width: 1110px;
 }
