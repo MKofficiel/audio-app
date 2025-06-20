@@ -25,11 +25,11 @@ const Hero = () => {
     //     <div className="absolute inset-0 h-full w-full -translate-y-[60px] bg-[url('src/assets/home/mobile/image-header.jpg')] bg-cover bg-center bg-no-repeat md:-translate-y-[100px] md:bg-[url('src/assets/home/tablet/image-header.jpg')] lg:bg-[url('src/assets/home/desktop/image-hero.jpg')] lg:bg-cover" />
     //   </div>
     // </section>
-    <section className="relative h-[70vh] overflow-hidden bg-red-400 lg:h-[90vh]">
+    <section className="relative h-[70vh] overflow-hidden lg:h-[90vh]">
       {/* BACKGROUND */}
-      <div className="absolute top-[-60px] right-0 h-[calc(100%+60px)] bg-[url('src/assets/home/mobile/image-header.jpg')] bg-cover bg-center bg-no-repeat md:top-[-100px] md:h-[calc(100%+100px)] md:bg-[url('src/assets/home/tablet/image-header.jpg')] lg:-left-[70px] lg:bg-[url('src/assets/home/desktop/image-hero.jpg')] lg:bg-left" />
+      {/* <div className="absolute top-[-60px] h-[calc(100%+60px)] bg-[url('src/assets/home/mobile/image-header.jpg')] bg-cover bg-center bg-no-repeat sm:h-full md:top-[-100px] md:h-[calc(100%+100px)] md:bg-[url('src/assets/home/tablet/image-header.jpg')] lg:right-0 lg:-left-[70px] lg:bg-[url('src/assets/home/desktop/image-hero.jpg')] lg:bg-left" /> */}
       {/* <div className="absolute top-[-60px] right-0 h-[886px] w-[708.8px] bg-[url('src/assets/home/mobile/image-header.jpg')] bg-cover bg-center bg-no-repeat md:top-[-100px] md:h-[calc(100%+100px)] md:bg-[url('src/assets/home/tablet/image-header.jpg')] lg:bg-[url('src/assets/home/desktop/image-hero.jpg')] lg:bg-left" /> */}
-
+      <div className="absolute inset-0 top-[-60px] h-[calc(100%+60px)] bg-[url('src/assets/home/mobile/image-header.jpg')] bg-cover bg-center md:bg-[url('src/assets/home/tablet/image-header.jpg')] lg:bg-[url('src/assets/home/desktop/image-hero.jpg')]" />
       {/* OVERLAY */}
 
       {/* CONTENT */}

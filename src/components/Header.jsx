@@ -7,7 +7,7 @@ import clsx from "clsx";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="relative z-20 flex h-[90px] bg-[#151515]">
+    <header className="relative z-20 flex h-[90px] bg-[#151515] max-lg:px-6">
       <div className="relative container flex items-center justify-between border-b border-gray-600 md:justify-start md:gap-[42px] lg:justify-between">
         <Link>
           <img
