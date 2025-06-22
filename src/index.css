@@ -16,7 +16,7 @@
   --button-secondary: #b5b5b5;
 }
 
-@theme inline {
+@theme {
   --font-monrape: "Manrope", sans-serif;
 
   --color-primary: var(--primary);
@@ -29,6 +29,19 @@
   --color-border-cta: var(--border-cta);
   --color-button-secondary: var(--button-secondary);
   --radius: var(--raduis);
+  --breakpoint-3xl: 1550px;
+}
+@layer components {
+  .container-custom {
+    @apply mx-auto max-w-[1100px] max-lg:px-6;
+  }
+}
+@layer utilities {
+  @media (orientation: portrait) {
+    .portrait\:h-auto {
+      min-height: 800px;
+    }
+  }
 }
 
 body {
@@ -38,9 +51,9 @@ body {
 @layer base {
 }
 
-@utility container {
+/* @utility container {
   margin-inline: auto;
   padding-inline: 0;
   margin: 0 auto;
   max-width: 1110px;
-}
+} */

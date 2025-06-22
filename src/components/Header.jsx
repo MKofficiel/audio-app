@@ -7,8 +7,8 @@ import clsx from "clsx";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="relative z-20 flex h-[90px] bg-[#151515] max-lg:px-6">
-      <div className="relative container flex items-center justify-between border-b border-gray-600 md:justify-start md:gap-[42px] lg:justify-between">
+    <header className="relative z-20 flex h-[90px] bg-[#151515]">
+      <div className="container-custom relative flex w-full items-center justify-between md:justify-start md:gap-[42px] lg:justify-between lg:border-b lg:border-gray-600">
         <Link>
           <img
             src="src/assets/shared/desktop/logo.svg"
@@ -23,7 +23,7 @@ const Header = () => {
           <ul className="flex gap-[34px]">
             {NavLink.map(({ label, path }) => (
               <li key={label}>
-                <Link className="text-sm leading-6 font-bold tracking-[2px] text-white uppercase">
+                <Link className="text-sm leading-6 font-bold tracking-[2px] text-white uppercase hover:text-orange-500">
                   {label}
                 </Link>
               </li>
